@@ -1,0 +1,14 @@
+#kafka相关配置
+#spring:
+  #kafka:
+    #bootstrap-servers: 192.168.2.104:9092
+    #consumer:
+     # group-id: backstageGroup
+      #key-value序列化反序列化
+      #key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      #value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+    #producer:
+      #key-serializer: org.apache.kafka.common.serialization.StringDeserializer
+      #value-serializer: org.apache.kafka.common.serialization.StringDeserializer
+      #batch-size: 65536
+      #buffer-memory: 524288

@@ -1,0 +1,50 @@
+server:
+  port: 8080
+
+mybatis:
+     mapperLocations: classpath:mapper/UsersMapper.xml
+     typeAliasesPackage: com.baojia.model
+spring:
+#  profiles:
+#      active: dev
+  dubbo:
+    application:
+      name: user
+    registry:
+      address: zookeeper://192.168.34.136:2181
+      group: user-alpha
+    protocol:
+      name: dubbo
+      port: 21880
+    scan: com.baojia.impl
+  datasource:
+      url: jdbc:mysql://127.0.0.1:3306/mmuu?useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true
+      username: user
+      password: 123456
+      # 使用druid数据源
+      type: com.alibaba.druid.pool.DruidDataSource
+      driver-class-name: com.mysql.jdbc.Driver
+      filters: stat
+      maxActive: 20
+      initialSize: 1
+      maxWait: 60000
+      minIdle: 1
+      timeBetweenEvictionRunsMillis: 60000
+      minEvictableIdleTimeMillis: 300000
+      validationQuery: select 1
+      testWhileIdle: true
+      testOnBorrow: false
+      testOnReturn: false
+      poolPreparedStatements: true
+      maxPoolPreparedStatementPerConnectionSize: 20
+      maxOpenPreparedStatements: 20
+
+ #pagehelper
+pagehelper:
+  helperDialect: mysql
+  reasonable: true
+  supportMethodsArguments: true
+  params: count=countSql
+  returnPageInfo: check
+
+

@@ -1,0 +1,23 @@
+server:
+  port: 8091
+
+spring:
+#  profiles:
+#      active: dev
+  dubbo:
+    application:
+      name: user
+    registry:
+      address: zookeeper://192.168.34.136:2181
+      group: user-alpha
+    protocol:
+      name: dubbo
+      port: 21886
+    #scan: com.baojia.controller
+  redis:
+    database: 0
+    host: localhost
+    port: 6379
+#logback
+logging:
+  config: classpath:config/logback.xml
