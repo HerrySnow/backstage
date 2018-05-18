@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/backstage.iml" filepath="$PROJECT_DIR$/backstage.iml" />
+      <module fileurl="file://$PROJECT_DIR$/backstage-api/backstage-api.iml" filepath="$PROJECT_DIR$/backstage-api/backstage-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/backstage-service/backstage-service.iml" filepath="$PROJECT_DIR$/backstage-service/backstage-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/backstage-web/backstage-web.iml" filepath="$PROJECT_DIR$/backstage-web/backstage-web.iml" />
+    </modules>
+  </component>
+</project>
