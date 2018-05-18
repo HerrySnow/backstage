@@ -1,6 +1,6 @@
 ## backstage
 springboot2.0+dubbo+redis+Maven+mybtis+druid+jwt+swagger2框架
-#jwt
+##jwt
 JWT的结构
 
 JWT包含了使用.分隔的三部分： Header 头部 Payload 负载 Signature 签名
